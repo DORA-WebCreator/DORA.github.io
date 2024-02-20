@@ -1,0 +1,173 @@
+body{
+  margin:0;
+}
+
+*{
+  list-style: none;
+  text-decoration: none;
+}
+
+a{
+  color:black;
+}
+
+.header-menu img{
+  vertical-align: bottom;
+  width:30px;
+}
+
+header{
+  height:350px;
+  width:100%
+}
+
+.header{
+  margin:0 auto;
+  width:1300px;
+  display:flex;
+  justify-content: space-between;
+  padding-top:120px
+}
+
+.header-title{
+  font-size:1.5rem;
+}
+
+.header-menu{
+  padding-top:27px;
+}
+
+.header-menu ul{
+  display:flex;
+  align-items: center;
+}
+
+.header-menu li{
+  font-size:1.5rem;
+  margin-right:30px;
+}
+
+main img{
+  height:700px;
+  width:100%
+}
+
+.section{
+  width:960px;
+  margin:0 auto;
+}
+
+.section-title{
+ font-size:1.5rem;
+ text-align:center;
+}
+
+#section-works ul{
+  max-width:100%;
+  display:grid;
+  gap:20px;
+  grid-template-rows:1fr 1fr ;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+#section-works img{
+display:block;
+width:100%;
+object-fit:contain;
+margin-top:0;
+}
+
+.News-content{
+  display:flex;
+  align-items: center;
+}
+
+.News-content dt{
+  padding-left:100px;
+}
+
+.News-content{
+  border-top:solid 1px #c8c8c8;;
+  line-height:50px;
+}
+
+.News-content:last-child {
+  border-bottom:solid 1px #c8c8c8;
+}
+
+.contact{
+  display:flex;
+  margin-top:10px;
+}
+
+.contact p{
+ width:200px;
+ margin-top:0;
+}
+
+.contact input , textarea{
+  width:100%;
+}
+
+
+
+
+#button{
+  width:200px;
+  height:70px;
+  background-color: black;
+  text-align: center;
+
+}
+
+#button p{
+  color:white;
+  line-height:4.5;
+}
+
+#button a :hover{
+ background-color: #fff;
+ border:solid 1px black;
+ color:black;
+}
+
+footer{
+  padding-top:30px;
+}
+
+.footer{
+ background-color: black;
+ color:#fff;
+ text-align: center;
+}
+
+@media screen and (max-width:600px){
+  body{
+    margin:20px;
+  }
+
+  .header{
+    max-width:100%;
+    height:auto;
+    flex-direction: column;
+  }
+
+  .header-title{
+    font-size:1.0rem;
+    text-align:center;
+  }
+
+  .section{
+    max-width:100%;
+  }
+
+  #section-works ul{
+    grid-template-columns: 1fr; 
+  }
+
+  .News-content{
+    flex-direction: column;
+  }
+    
+  
+}
